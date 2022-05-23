@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wikisaur</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../multimedia/img/logosmall.png" />
   </head>
   <body>
     <header>
       <img src="../multimedia/img/logosmall.png" alt="logo wikisaur" />
-      <nav>
-        <ul class="header__nav">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./history.html">Historia</a></li>
-          <li><a href="./dinosaurs.html">Dinosaurios</a></li>
-          <li><a href="./paleontology.html">Paleontologia</a></li>
-          <li><a href="./scifi.html">Ciencia Ficcion</a></li>
-        </ul>
-      </nav>
+
     </header>
+    <nav class="navbar">
+      <ul class="navbar__nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./history.html">Historia</a></li>
+        <li><a href="./dinosaurs.html">Dinosaurios</a></li>
+        <li><a href="./paleontology.html">Paleontologia</a></li>
+        <li><a href="./scifi.html">Ciencia Ficcion</a></li>
+      </ul>
+    </nav>
     <main>
       <section class="peliculas">
         <h2 class="titulo">Jurassic Park 1</h2>
@@ -31,6 +33,7 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
+          class="peliculas__video"
         ></iframe>
         <h2 class="titulo">Jurassic Park 2</h2>
         <iframe
@@ -41,6 +44,7 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
+          class="peliculas__video"
         ></iframe>
       </section>
     </main>
