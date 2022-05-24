@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
 @font-face {
   font-family: dinofont;
   src: url("../fonts/dinofont.ttf");
@@ -8,103 +8,172 @@
   padding: 0;
 }
 html {
-  /*font-size: 62.5%;*/
+  font-size: 62.5%;
 }
 
 body {
   display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main main"
+    "footer footer footer";
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr 1fr;
   min-height: 100vh;
-
-  
+  background-image: url("../multimedia/img/background1.jpg");
+  background-size: cover;
 }
 
 header {
+  grid-area: header;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
   align-items: center;
- background-color: #f8d295
-  
-  
+  background-color: #f8d295;
 }
-.header__nav {
+/*solo por cuestiones de la consigna saque la barra del header para ponerla
+en una columna al costado del main para utilizacion de grids*/
+.navbar__nav {
   list-style: none;
-  width: 600px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   font-family: dinofont;
-  font-size: 20px;
-  }
-  a:link,a:visited{
-      text-decoration: none;
-  }
-body {
-  background-image: url("../multimedia/img/background1.jpg");
-  background-size: cover;
-
+  font-size: 3rem;
+  gap: 8rem;
+}
+.navbar {
+  grid-area: nav;
+  width: 20rem;
+  background-color: #927b56;
 }
 
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+}
 .descripcion {
   display: flex;
   flex-direction: column;
 }
 
-
-.descripcion__parrafo{
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
-    
-    
+.descripcion__parrafo {
+  margin-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 1rem;
+  font-size: 1.6rem;
 }
 
-.descripcion__img {
-    padding: 20px;
-   /* border: 3px solid black;*/
-    margin-left: 10px;
-    border-radius: 10px;
-    display: flex;
-    height: 200px;
-    justify-content: space-around;
-   /* box-shadow: 5px 10px 8px #888888;*/
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.descripcion__cuadro {
+  padding: 2rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  gap:1rem;
 
-    filter: grayscale();
-    transition: all 1s;
-    
-  }
-  .descripcion__img:hover{
-    filter: none;
-  }
-  .descripcion__img--bigger {
-    padding: 20px;
-    border: 3px solid black;
-    margin-left: 10px;
-    border-radius: 10px;
-    display: flex;
-    height: 400px;
-    justify-content: space-around;
-    
-  }
+  justify-content: space-around;
+  
+}
+.descripcion__cuadro__img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  filter: grayscale();
+  transition: all 1s;
+  width: 100%; /* con esto las imagenes son responsive, se achican al achicar el sitio*/
+  max-width: 35rem;
+  height: auto;
+}
+.descripcion__cuadro__img:hover {
+  filter: none;
+}
+/* imagenes de lo que va a ser la pagina de inicio que va a redirigir a las secciones*/
+.accesos { 
+  /*esto lo hago resposive utilizando flex wrap, cuando se achica el ancho del sitio 
+  automaticamente se hace columna por el flex wrap*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.accesos__secciones__img {
+  width: 100%; /* con esto las imagenes son responsive, se achican al achicar el sitio*/
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.514), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.acceso_secciones_titulo {
+  text-align: center;
+}
+/*-------------------------------------------------------------------------------------*/
+
 .titulo {
   font-family: "Quicksand", sans-serif;
-  font-size: 40px;
-  margin: 20px 0px;
+  font-size: 4rem;
+  margin: 2rem 0;
   color: rgb(26, 134, 26);
   text-align: center;
 }
-.peliculas{
+/*seccion de los videos*/
+.peliculas {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-footer{
-    background-color:#f8d295;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 90px;
-    padding:10px;
-}
 
+footer {
+  grid-area: footer;
+  background-color: #f8d295;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 950px){  /*esto solo lo hago por los videos */
+  .peliculas__video{
+
+    
+    width: auto;
+    height: auto;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    grid-template-rows: auto auto 1fr auto;
+ 
+  }
+  .navbar__nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .navbar__nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+  .navbar {
+    width: auto;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .titulo{
+    font-size: 2rem;
+  }
+  
+}
