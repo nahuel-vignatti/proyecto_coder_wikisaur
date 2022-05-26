@@ -12,22 +12,15 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav main main"
-    "footer footer footer";
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 1fr 1fr;
   min-height: 100vh;
   background-image: url("../multimedia/img/background1.jpg");
   background-size: cover;
 }
 
 header {
-  grid-area: header;
+  
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #f8d295;
 }
@@ -36,17 +29,17 @@ en una columna al costado del main para utilizacion de grids*/
 .navbar__nav {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   font-family: dinofont;
-  font-size: 3rem;
-  gap: 8rem;
+  font-size: 2rem;
+  gap: 2rem;
 }
 .navbar {
-  grid-area: nav;
-  width: 20rem;
-  background-color: #927b56;
+  
+  width: 60rem;
+
 }
 
 a:link,
@@ -130,7 +123,7 @@ main {
 }
 
 footer {
-  grid-area: footer;
+  
   background-color: #f8d295;
   display: flex;
   justify-content: space-between;
@@ -147,22 +140,14 @@ footer {
 
 }
 @media screen and (max-width: 480px) {
-  body {
-    grid-template-areas:
-      "header"
-      "nav"
-      "main"
-      "footer";
-    grid-template-rows: auto auto 1fr auto;
  
-  }
   .navbar__nav {
     flex-direction: row;
     flex-wrap: wrap;
   }
   .navbar__nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 1.5rem;
     gap: 1rem;
   }
