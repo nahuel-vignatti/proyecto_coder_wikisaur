@@ -40,8 +40,7 @@ header {
   75%{opacity:0.25;}
   100%{opacity:0;}  
 }
-/*solo por cuestiones de la consigna saque la barra del header para ponerla
-en una columna al costado del main para utilizacion de grids*/
+
 .navbar__nav {
   list-style: none;
   display: flex;
@@ -52,6 +51,7 @@ en una columna al costado del main para utilizacion de grids*/
   font-size: 2rem;
   gap: 2rem;
 }
+
 .navbar {  
   max-width: 60rem;
 }
@@ -103,12 +103,12 @@ main {
 .accesos { 
   /*esto lo hago resposive utilizando flex wrap, cuando se achica el ancho del sitio 
   automaticamente se hace columna por el flex wrap*/
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 90vw;
+  flex-wrap: wrap;*/
+  /*width: 90vw;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;*/
   font-size: 2rem;
   
 }

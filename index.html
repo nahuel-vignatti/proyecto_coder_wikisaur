@@ -6,51 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./multimedia/img/logosmall.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <title>Wikisaur</title>
   </head>
   <body>
     <header>
-      <img src="./multimedia/img/logosmall.png" alt="logo wikisaur" class="logo_sitio"/>
-      <nav class="navbar navbar-expand-lg">
+      <img
+        src="./multimedia/img/logosmall.png"
+        alt="logo wikisaur"
+        class="logo_sitio"
+      />
+      <nav class="nav navbar navbar-expand-lg">
         <ul class="navbar__nav">
           <li class="nav-item"><a href="./index.html">Home</a></li>
           <li class="nav-item"><a href="./views/history.html">Historia</a></li>
-          <li class="nav-item"><a href="./views/dinosaurs.html">Dinosaurios</a></li>
-          <li class="nav-item"><a href="./views/paleontology.html">Paleontologia</a></li>
-          <li class="nav-item"><a href="./views/scifi.html">Ciencia Ficcion</a></li>
+          <li class="nav-item">
+            <a href="./views/dinosaurs.html">Dinosaurios</a>
+          </li>
+          <li class="nav-item">
+            <a href="./views/paleontology.html">Paleontologia</a>
+          </li>
+          <li class="nav-item">
+            <a href="./views/scifi.html">Ciencia Ficcion</a>
+          </li>
         </ul>
-      </nav>      
+      </nav>
     </header>
 
     <main>
       <h2 class="titulo">Bienvenido a Wikisaur!</h2>
-      <section class="accesos">
-        <article class="accesos__secciones card">
-          <img src="./multimedia/img/seccion1.jpg" alt="seccion 1" class="accesos__secciones__img"/>
-          <div class="card-body">
-            <h3 class="acceso_secciones_titulo card-title">seccion</h3>
-          </div>
-          
-        </article>
-        <article class="accesos__secciones card">
-          <img src="./multimedia/img/seccion2.jpg" alt="seccion 2" class="accesos__secciones__img"/>
-          <div class="card-body">
-            <h3 class="acceso_secciones_titulo card-title">seccion</h3>
-          </div>
-        </article>
-        <article class="accesos__secciones card">
-          <img src="./multimedia/img/seccion3.jpg" alt=" seccion 3" class="accesos__secciones__img"/>
-          <div class="card-body">
-            <h3 class="acceso_secciones_titulo card-title">seccion</h3>
-          </div>
-        </article>
-        <article class="accesos__secciones card">
-          <img src="./multimedia/img/seccion4.jpg" alt=" seccion 4" class="accesos__secciones__img"/>
-          <div class="card-body">
-            <h3 class="acceso_secciones_titulo card-title">seccion</h3>
-          </div>
-        </article>
+      <section class="accesos container">
+        <div class="row  justify-content-center">
+          <article class="accesos__secciones card col-md-6 col-8">
+            <img
+              src="./multimedia/img/seccion1.jpg"
+              alt="seccion 1"
+              class="accesos__secciones__img"
+            />
+            <div class="card-body">
+              <h3 class="acceso_secciones_titulo card-title">seccion</h3>
+            </div>
+          </article>
+          <article class="accesos__secciones card col-md-6 col-8">
+            <img
+              src="./multimedia/img/seccion2.jpg"
+              alt="seccion 2"
+              class="accesos__secciones__img"
+            />
+            <div class="card-body">
+              <h3 class="acceso_secciones_titulo card-title">seccion</h3>
+            </div>
+          </article>
+          <article class="accesos__secciones card col-md-6 col-8">
+            <img
+              src="./multimedia/img/seccion3.jpg"
+              alt=" seccion 3"
+              class="accesos__secciones__img"
+            />
+            <div class="card-body">
+              <h3 class="acceso_secciones_titulo card-title">seccion</h3>
+            </div>
+          </article>
+          <article class="accesos__secciones card col-md-6 col-8">
+            <img
+              src="./multimedia/img/seccion4.jpg"
+              alt=" seccion 4"
+              class="accesos__secciones__img"
+            />
+            <div class="card-body">
+              <h3 class="acceso_secciones_titulo card-title">seccion</h3>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
@@ -67,7 +99,10 @@
       </section>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
