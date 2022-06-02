@@ -15,33 +15,44 @@
     <title>Wikisaur</title>
   </head>
   <body>
-    <header>
+    <header class="flex-column flex-sm-row">      
       <img
-        src="./multimedia/img/logosmall.png"
-        alt="logo wikisaur"
-        class="logo_sitio"
-      />
-      <nav class="nav navbar navbar-expand-lg">
-        <ul class="navbar__nav">
-          <li class="nav-item"><a href="./index.html">Home</a></li>
-          <li class="nav-item"><a href="./views/history.html">Historia</a></li>
-          <li class="nav-item">
-            <a href="./views/dinosaurs.html">Dinosaurios</a>
-          </li>
-          <li class="nav-item">
-            <a href="./views/paleontology.html">Paleontologia</a>
-          </li>
-          <li class="nav-item">
-            <a href="./views/scifi.html">Ciencia Ficcion</a>
-          </li>
-        </ul>
+      src="./multimedia/img/logosmall.png"
+      alt="logo wikisaur"
+      class="logo_sitio"
+    />
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Tooggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item"><a class="nav-link fs-2" href="./index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link fs-2" href="./views/history.html">Historia</a></li>
+              <li class="nav-item"><a class="nav-link fs-2" href="./views/dinosaurs.html">Dinosaurios</a></li>
+              <li class="nav-item"><a class="nav-link fs-2" href="./views/paleontology.html">Paleontologia</a></li>
+              <li class="nav-item"><a class="nav-link fs-2" href="./views/scifi.html">Ciencia Ficcion</a></li>              
+            </ul>
+          </div>
+        </div>
       </nav>
-    </header>
+    
+  </header>
 
     <main>
       <h2 class="titulo">Bienvenido a Wikisaur!</h2>
       <section class="accesos container">
-        <div class="row  justify-content-center">
+        <div class="row justify-content-center">
           <article class="accesos__secciones card col-md-6 col-8">
             <img
               src="./multimedia/img/seccion1.jpg"
@@ -85,7 +96,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="flex-column flex-sm-row">
       <a href="./index.html"
         ><img src="./multimedia/img/logosmall.png" alt="Home del sitio"
       /></a>

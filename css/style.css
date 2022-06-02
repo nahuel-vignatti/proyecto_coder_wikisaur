@@ -24,6 +24,8 @@ header {
   align-items: center;
   background-color: #f8d295;
   background: linear-gradient(to right, #a2ab58, #636363);
+  gap: 5rem;
+ 
   
 
 }
@@ -40,20 +42,12 @@ header {
   75%{opacity:0.25;}
   100%{opacity:0;}  
 }
-
-.navbar__nav {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+nav div ul li a{
+  
   font-family: dinofont;
-  font-size: 2rem;
-  gap: 2rem;
 }
-
-.navbar {  
-  max-width: 60rem;
+nav div ul li {
+  text-align: center;
 }
 
 a:link,
@@ -61,9 +55,6 @@ a:visited {
   text-decoration: none;
 }
 
-main {
-  grid-area: main;
-}
 .descripcion {
   display: flex;
   flex-direction: column;
@@ -83,7 +74,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  gap:1rem;
+  gap:2rem;
 
   justify-content: space-around;
   
@@ -101,14 +92,6 @@ main {
 }
 /* imagenes de lo que va a ser la pagina de inicio que va a redirigir a las secciones*/
 .accesos { 
-  /*esto lo hago resposive utilizando flex wrap, cuando se achica el ancho del sitio 
-  automaticamente se hace columna por el flex wrap*/
-  /*display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;*/
-  /*width: 90vw;
-  justify-content: space-around;
-  align-items: center;*/
   font-size: 2rem;
   
 }
@@ -157,41 +140,25 @@ main {
 
 footer {
   
- /* background-color: #f8d295;*/
+
   background: linear-gradient(to right, #a2ab58, #636363);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
-@media screen and (max-width: 950px){  /*esto solo lo hago por los videos */
-  .peliculas__video{
 
-    
+
+@media screen and (max-width: 950px){  /*esto solo lo hago por los videos */
+  .peliculas__video{    
     width: auto;
     height: auto;
   }
 
 }
+
 @media screen and (max-width: 480px) {
- 
-  .navbar__nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .navbar__nav {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.5rem;
-    gap: 1rem;
-  }
-  .navbar {
-    width: auto;
-  }
-  footer {
-    flex-direction: column;
-  }
-  .titulo{
+   .titulo{
     font-size: 2rem;
   }
   
