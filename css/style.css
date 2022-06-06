@@ -14,7 +14,7 @@ html {
 body {
   min-height: 100vh;
   background-image: url("../multimedia/img/background1.jpg");
-  background-size: cover;
+  background-size: cover; 
 }
 
 header {
@@ -22,8 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8d295;
-  background: linear-gradient(to right, #a2ab58, #636363);
+ /* background: linear-gradient(to right, #a2ab58, #636363);*/
   gap: 5rem;
  
   
@@ -55,6 +54,13 @@ a:visited {
   text-decoration: none;
 }
 
+main{
+  width: 80%;
+  background-color: antiquewhite;
+  background-color: rgba(237, 205, 119,0.5);
+
+  
+}
 .descripcion {
   display: flex;
   flex-direction: column;
@@ -139,8 +145,7 @@ a:visited {
 }
 
 footer {
-  
-
+  margin-top: 3rem;
   background: linear-gradient(to right, #a2ab58, #636363);
   display: flex;
   justify-content: space-between;
